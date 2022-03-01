@@ -1,0 +1,20 @@
+" Write a function that coerces a number to a string
+"
+"function! NumberToString(number) abort 
+"  let l:stringified_number = string(a:number)
+"  echo a:number." says: "
+"  echo "I am now a ".typename(l:stringified_number)
+" return l:stringified_number
+"endfunction
+"
+"
+"let s:test = typename(NumberToString(3)) ==# "string"
+"echo s:test
+"
+" Change a string to a number
+" str2nr('1') "number
+"
+" convert a string to a list
+ echo map(str2list('hello world'), " v:val + 3 " )
+"
+"

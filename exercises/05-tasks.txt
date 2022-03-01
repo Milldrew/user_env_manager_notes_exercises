@@ -1,0 +1,3 @@
+5. Build larger functions
+    • Build a tic tac toe game
+    • Build a calculator

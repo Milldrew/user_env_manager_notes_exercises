@@ -1,0 +1,14 @@
+body {
+  color: white;
+  background-color: black;
+}
+header {
+  display: flex;
+  justify-content: center;
+}
+h1.sans {
+  margin: 40 0 0 0;
+  font-family: sans-serif;
+  font-weight: 1;
+  color: #ff0066;
+}

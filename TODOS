@@ -1,0 +1,13 @@
+user_env_commands -> lists commands
+
+commands:
+
+notes -> lists with netrw
+notes name -> gets
+
+exercises - lists all exercises with netrw
+exercises name - goes to exercise file
+
+vimpacks - lists packs
+vimpacks name -> takes you to a package
+vimpacks create

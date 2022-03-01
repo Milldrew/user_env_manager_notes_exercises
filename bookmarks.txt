@@ -1,0 +1,13 @@
+MDN Web Docs
+https://developer.mozilla.org/en-US/
+CSS Tricks
+https://css-tricks.com/
+Accessibility Checklist very useful
+https://www.a11yproject.com/checklist/
+React JS documentation
+https://reactjs.org/
+Redux documentation
+https://redux.js.org/
+Codecademy Group Front End Engineering
+https://discuss.codecademy.com/t/front-end-engineer-group-105-2021/638499
+

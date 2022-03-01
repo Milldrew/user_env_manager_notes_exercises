@@ -1,0 +1,4 @@
+6. Complete some difficult algorithms.
+    • rot 13
+    • rotate a numbers digit on a given access
+    • get all the substrings

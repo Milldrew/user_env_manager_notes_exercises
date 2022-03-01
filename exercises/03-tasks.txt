@@ -1,0 +1,1 @@
+3. Built in functions learn 5 - 10 useful built in functions for each interface or data type

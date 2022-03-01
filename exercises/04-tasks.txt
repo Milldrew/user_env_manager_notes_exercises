@@ -1,0 +1,5 @@
+4. Build basic functions.
+  - examples
+    • Build a function that uses variables from each scope.
+    • Take input from user and print hello user name.
+    • print out the even numbers up 100

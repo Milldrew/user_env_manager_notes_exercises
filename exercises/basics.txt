@@ -1,0 +1,8 @@
+1. Learn the data types and how to coerce data types.
+  - examples
+    • Coerce a number to a string
+    • Coerce a string to a list
+    • Coerce a list to an object.
+    • List to string
+    • object to string
+    • Check the data type of a variable

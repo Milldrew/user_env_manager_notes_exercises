@@ -1,0 +1,7 @@
+2. Learn the expressions, the operators, loops and conditional statements.
+  - examples
+    • Equality and inequality
+    • Mathematical operators
+    • Capitalization
+    • Loops: for loop and while loop
+    • break statements return statements next and continue.

@@ -1,0 +1,12 @@
+----use all of these properites
+justify-content
+align-items
+flex-grow
+flex-shrink
+flex-basis
+flex
+flex-wrap
+align-content
+flex-direction
+flex-flow
+

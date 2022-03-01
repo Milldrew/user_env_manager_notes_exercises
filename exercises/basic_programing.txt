@@ -1,0 +1,36 @@
+What should someone know when they are learning a new programming language?
+
+They need to know the data types.
+The physical and virtual environment the programming language runs in.
+The interfaces that are available to the programming language.
+
+1. Learn the data types and how to coerce data types.
+  - examples
+    • Coerce a number to a string
+    • Coerce a string to a list
+    • Coerce a list to an object.
+    • List to string
+    • object to string
+    • Check the data type of a variable
+2. Learn the expressions, the operators, loops and conditional statements.
+  - examples
+    • Equality and inequality
+    • Mathematical operators
+    • Capitalization
+    • Loops: for loop and while loop
+    • break statements return statements next and continue.
+3. Built in functions learn 5 - 10 useful built in functions for each interface or data type
+4. Build basic functions.
+  - examples
+    • Build a function that uses variables from each scope.
+    • Take input from user and print hello user name.
+    • print out the even numbers up 100
+5. Build larger functions
+    • Build a tic tac toe game
+    • Build a calculator
+6. Complete some difficult algorithms.
+    • rot 13
+    • rotate a numbers digit on a given access
+    • get all the substrings
+7. Use the useful interfaces that are available and understand them.
+8. Package management and documentation comments testing larger projects.

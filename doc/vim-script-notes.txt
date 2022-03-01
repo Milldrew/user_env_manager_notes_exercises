@@ -1,0 +1,9 @@
+*vim-script-notes.txt*
+
+*vim-script-notes*
+foo
+*variable-notes*
+bar
+*expression-notes*
+baz
+vim:tw=79:ts=8:ft=help:norl:

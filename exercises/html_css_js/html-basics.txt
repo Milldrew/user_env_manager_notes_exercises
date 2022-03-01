@@ -1,0 +1,12 @@
+1. Create a basic semantic html layout
+2. Add a style sheet.
+3. Create a navbar
+4. Create a table with horizontal and vertical columns
+5. Create an ordered an un ordered list
+6. Description list
+7. Data list
+8. Card
+9. Paper
+10. Page break
+11. Article section aside image paragraph 
+12.
