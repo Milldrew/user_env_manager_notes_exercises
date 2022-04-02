@@ -1,8 +1,8 @@
+  let s:commandNames = {}
 function! GetDir(dirPath) abort
   call chdir(a:dirPath)
   let l:files = readdir(a:dirPath)
   let l:fullDirPaths = []
-  let l:commandNames = {}
   for file in files
     if isdirectory(file)
       call add(l:fullDirPaths, [a:dirPath.'/'.file, file]) 
@@ -14,12 +14,11 @@ function! GetDir(dirPath) abort
     for dirPathWithName in fullDirPaths
       let l:conflict_count = 0
       let l:dirPathCommand = dirPathWithName[0]
-      echo l:dirPathCommand
       let l:name  = dirPathWithName[1]
       let l:commandName= 'A'.slice(l:name, 0, 3)
       let isNameConflict =  has_key(commandNames, l:commandName)
 
-      echo l:commandNames
+      echo s:commandNames
       echo isNameConflict
 
       if (!isNameConflict)
@@ -35,7 +34,7 @@ function! GetDir(dirPath) abort
       echo l:commandName
         exec 'command! '.l:commandName.' :e '.l:dirPathCommand
       endif
-      let l:commandNames[l:commandName] = 1
+      let s:commandNames[l:commandName] = 1
 
       call GetDir(l:dirPathCommand)
     endfor
@@ -50,4 +49,5 @@ let path_to_app = $ANGULAR_APP_DIR . 'app'
 silent! call GetDir(path_to_app)
 exec 'command! App :e '.path_to_app
 command! Asrc :e $ANGULAR_APP_DIR
+command! Asource :source /Users/andrewmiller/.vim/pack/01-user_env_manager_notes_exercises/start/user_env_manager_notes_exercises/plugin/angular.vim
 
