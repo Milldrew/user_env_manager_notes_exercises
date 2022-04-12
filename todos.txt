@@ -1,26 +1,31 @@
----------------------
-TASK 3
----------------------
-Create relations between two entities without using any notes @many to many and Join table decorator.
 
-retrieve entities with their relations 
-{relations: 'flavors'}
+1. Create a script to setup an angular project with ngrx with a counter.
+  - Setup the User interface so that it is at a useful starting point.
+  - make sure that the script downloads the ngrx packages.
+  - Add a counter with a count, an increment, decrement, and reset action
+• - Make sure that the ngrx debugger is setup and working in the Chrome dev tools.
+2. Create a ngrx kata where you create CRUD operations for a product.
+  - Create a script that can autogenerate some boiler plate.
+  - Fill in the CRUD operations.
+3. Create CRUD Effects that save state in a remote database.
+  - Create a script to create some boiler plate for effects
+  - Create the http requests by hand.
+4. Setup a router
 
-preload flavors accept the array of flavors and check if it exists if it doesn't exist then create it'                                                               
+-----------------------------------------------------------------------
 
-create and update and delete beverages and flavors with cascading for relations
+Try doing  a similar thing with the ngrx schematics for generating 
 
-updating check if the updatDTO has flavors
----------------------
-TASK 4
----------------------
-Create a new DTO PaginationQuery
 
-export class
-validators Type IsOptional IsPositive 
-Type transform () => Number
 
-Enable implicit conversion for the transform Options
+For users
+create a SignUp action
+create an entity
 
-add the skip and take properties to the find methods options object
+id:
+email:
+password:
+
+
+
 
