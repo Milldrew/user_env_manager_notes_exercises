@@ -16,6 +16,7 @@ function! GetDir(dirPath) abort
       let l:dirPathCommand = dirPathWithName[0]
       let l:name  = dirPathWithName[1]
       let l:commandName= 'A'.slice(l:name, 0, 3)
+      let l:commandName= substitute(l:commandName,'-','d','g')
       let isNameConflict =  has_key(s:commandNames, l:commandName)
 
       echo s:commandNames
@@ -47,7 +48,7 @@ command! Asrc :e $ANGULAR_APP_DIR
 let path_to_app = $ANGULAR_APP_DIR . 'app'
 let path_to_routing = $ANGULAR_APP_DIR . 'app' . '/app-routing.module.ts'
 "echo path_to_app
-silent!  call  GetDir(path_to_app)
+silent  call  GetDir(path_to_app)
 exec 'command! Arouting :e '.path_to_routing
 exec 'command! App :e '.path_to_app
 command! Asrc :e $ANGULAR_APP_DIR
