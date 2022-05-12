@@ -1,3 +1,4 @@
+
 "angular
 nmap <buffer>  ah /html<CR><CR>
 nmap <buffer>  ass /css<CR><CR>
@@ -17,3 +18,4 @@ let @m=":e .\<CR> /module\<CR>\<CR>"
 nmap <leader>4 <c-w>v<c-w>vat<c-w>lah<c-w>lass
 nmap <leader>5 <c-w>v<c-w>vnsm<c-w>lnsc<c-w>lnss
 nmap <leader>6 <c-w>v<c-w>v/main\.ts<cr><cr><c-w>l/module\.ts<cr><cr>
+

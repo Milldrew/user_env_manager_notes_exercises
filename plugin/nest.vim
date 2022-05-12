@@ -42,6 +42,7 @@ function! GetDir(dirPath) abort
 endfunction
 
 let $NEST_SRC_DIR=$NEST_SRC_DIR
+echo $NEST_SRC_DIR
 silent! call GetDir($NEST_SRC_DIR)
 "call GetDir($NEST_SRC_DIR)
 command! Src :e $NEST_SRC_DIR

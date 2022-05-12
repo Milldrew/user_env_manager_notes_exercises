@@ -40,15 +40,16 @@ function! GetDir(dirPath) abort
       call GetDir(l:dirPathCommand)
     endfor
   endif
-   
+echom s:commandNames  
 endfunction
 
 let $ANGULAR_APP_DIR=$ANGULAR_APP_DIR
 command! Asrc :e $ANGULAR_APP_DIR
 let path_to_app = $ANGULAR_APP_DIR . 'app'
 let path_to_routing = $ANGULAR_APP_DIR . 'app' . '/app-routing.module.ts'
-"echo path_to_app
-silent  call  GetDir(path_to_app)
+"if path_to_app !=# 'app' 
+silent    call  GetDir(path_to_app)
+"endif
 exec 'command! Arouting :e '.path_to_routing
 exec 'command! App :e '.path_to_app
 command! Asrc :e $ANGULAR_APP_DIR
