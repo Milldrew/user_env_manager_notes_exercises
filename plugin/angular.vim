@@ -15,7 +15,17 @@ function! GetDir(dirPath) abort
     for dirPathWithName in fullDirPaths
       let l:dirPathCommand = dirPathWithName[0]
       let l:name  = dirPathWithName[1]
-      let l:commandName= 'A'.slice(l:name, 0, 3)
+      let l:count = 0
+      let l:suffix = ''
+      for char in split(l:name, '\zs')
+        echo char
+        let l:suffix .= char
+        let l:count += 1
+        if l:count ==# 3
+          break
+        endif
+      endfor
+      let l:commandName= 'A' . l:suffix
       let l:commandName= substitute(l:commandName,'-','d','g')
       let isNameConflict =  has_key(s:commandNames, l:commandName)
 
