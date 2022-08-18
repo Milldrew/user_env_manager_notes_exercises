@@ -1,5 +1,5 @@
 command! Scratch :e ~/scratch.txt
-command! Repl :e ~/scratch/repl.vim
+command! Repl :e ~/repl.vim
 command! Bashrc :e ~/.local/share/nvim/site/pack/packer/start/user_env_manager_notes_exercises/bash_modules
 command! Bookmarks :e ~/.local/share/nvim/site/pack/packer/start/user_env_manager_notes_exercises/bookmarks.txt
 command! Commands :e ~/.local/share/nvim/site/pack/packer/start/user_env_manager_notes_exercises/plugin/commands.vim
