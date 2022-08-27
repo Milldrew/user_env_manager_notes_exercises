@@ -1,2 +1,4 @@
-1. Create a gateway that handles signup and  authorization.
-2. Create a ws microservice that acts as a news feed and uses redis cache for recent events.
+1. Check if you can recreaete the svg component as the base class for chart.
+    -- then use it to extend another class component access the members off of it
+2. AFter you create the svg make the background a color
+3. Then make it responsive to the parent elments size and the viewpots size.

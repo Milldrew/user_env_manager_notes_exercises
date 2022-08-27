@@ -1,3 +1,4 @@
+command! D3notes :e ~/D3notes.txt
 command! ABtasks :e ~/ABtasks.txt
 command! Scratch :e ~/scratch.txt
 command! Repl :e ~/repl.vim
