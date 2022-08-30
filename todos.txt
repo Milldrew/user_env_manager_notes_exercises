@@ -1,4 +1,7 @@
-1. Check if you can recreaete the svg component as the base class for chart.
-    -- then use it to extend another class component access the members off of it
-2. AFter you create the svg make the background a color
-3. Then make it responsive to the parent elments size and the viewpots size.
+create the svg
+add scrollable
+add non scrollable region
+limit view
+add scroll
+
+
