@@ -1,8 +1,8 @@
-. Get the length of the whole chart.
-. Assign the height and width of the viewable window by getting the height of the chart.
-. Create the scroll indicator
-. Create Drag functionality for the scroll indicator
-. Make the chart scroll to the length of the chart.
+ Get the length of the whole chart.
+ Assign the height and width of the viewable window by getting the height of the chart.
+ Create the scroll indicator
+ Create Drag functionality for the scroll indicator
+ Make the chart scroll to the length of the chart.
 
 
 
