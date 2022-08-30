@@ -1,8 +1,15 @@
-create the svg
-add scrollable
-add non scrollable region
-limit view
-add rectangle hook
-add wheel event to  scrollable
+. Get the length of the whole chart.
+. Assign the height and width of the viewable window by getting the height of the chart.
+. Create the scroll indicator
+. Create Drag functionality for the scroll indicator
+. Make the chart scroll to the length of the chart.
 
 
+
+
+
+inputs maximum displacement mouse position
+
+when the mouse position is at 0 translation should be 0 when the mouse position is at max the translation should be max displacement.
+
+mousePosition * maxWheelDisplacement / maxMousPositionDisplacement = positionToDisplacement
