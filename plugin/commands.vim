@@ -1,3 +1,4 @@
+command! -nargs=1 Vimgrep :vimgrep <args> ./**
 command! D3notes :e ~/D3notes.txt
 command! ABtasks :e ~/ABtasks.txt
 command! Scratch :e ~/scratch.txt
