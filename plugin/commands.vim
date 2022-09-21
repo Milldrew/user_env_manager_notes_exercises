@@ -1,5 +1,8 @@
+command! -range Reword :s/pick/reword
+command! -range Squash :s/pick/squash
 command! -nargs=1 Vimgrep :vimgrep <args> ./**
 command! D3notes :e ~/D3notes.txt
+command! ABbugs :e ~/ABbugs.txt
 command! ABtasks :e ~/ABtasks.txt
 command! Scratch :e ~/scratch.txt
 command! Repl :e ~/repl.vim
