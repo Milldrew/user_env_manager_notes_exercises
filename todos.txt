@@ -1,3 +1,3 @@
-Get IPG app running locally
-rebuild library
-
+1. build a todo-list card
+    header
+    body
