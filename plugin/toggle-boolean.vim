@@ -9,5 +9,11 @@ function! Toggle()
   if l:booleanUnderCursor ==# 'false' 
     normal ciwtrue
   endif
+  if l:booleanUnderCursor ==# 'public' 
+    normal ciwprivate
+  endif
+  if l:booleanUnderCursor ==# 'private' 
+    normal ciwpublic
+  endif
 endfunction
 nnoremap † :call Toggle()<cr>
