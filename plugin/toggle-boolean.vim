@@ -16,5 +16,11 @@ function! Toggle()
   if l:booleanUnderCursor ==# 'number' 
     normal ciwstring
   endif
+  if l:booleanUnderCursor ==# 'k' 
+    normal ciwkubectl
+  endif
+  if l:booleanUnderCursor ==# 'mk' 
+    normal ciwminikube
+  endif
 endfunction
 nnoremap † :call Toggle()<cr>
