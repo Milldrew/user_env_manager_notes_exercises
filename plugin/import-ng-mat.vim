@@ -6,8 +6,8 @@ function! AddMatComponent () abort
   call inputsave()
   let l:componentName =  input("What is the name of the angular material component?")
   call inputrestore()
-  let l:pathToModule =  $ANGULAR_APP_DIR . '/app/app.module.ts'
-  let l:lowerComponentName = tolower(l:componentName[0]) . slice(l:componentName, 1)   
+  let l:pathToModule =  $SRC_DIR . '/app/app.module.ts'
+  let l:lowerComponentName = tolower(l:componentName[0])  . l:componentName[1:-1]
   let l:importString = 'import { Mat' . l:componentName . 'Module } from "@angular/material/' . l:lowerComponentName . '"'
   echo l:importString
   execute ":e " . l:pathToModule
