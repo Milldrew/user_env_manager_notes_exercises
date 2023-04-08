@@ -3,7 +3,6 @@ command! -range Squash :s/pick/squash
 command! -nargs=1 Vimgrep :vimgrep <args> ./**
 command! D3notes :e ~/D3notes.txt
 command! ABbugs :e ~/ABbugs.txt
-command! ABtasks :e ~/ABtasks.txt
 command! Scratchv :e ~/scratch.vim
 command! Scratch :e ~/scratch.txt
 command! Repl :e ~/repl.vim
@@ -17,11 +16,10 @@ command! Ftplugin :e ~/.vim/ftplugin
 command! Notes :e ~/.local/share/nvim/site/pack/packer/start/user_env_manager_notes_exercises/notes/
 command! Schedule :e ~/.local/share/nvim/site/pack/packer/start/user_env_manager_notes_exercises/schedule.txt
 command! ScriptingHelp :h usr_41.txt
-command! Todos :e ~/todos.txt
 command! Vimpacks :e ~/.vim/pack/
 command! Vimrc :e ~/.config/nvim/init.vim
 command! Ln :lua package.loaded["create-shortcuts"] = nil
 command! Lr :lua require('create-shortcuts')
-
-
-
+command! Todos :e ~/todos.txt
+command! ABtasks :e ~/ABtasks.txt
+command! Workout :e ~/Workout.txt
