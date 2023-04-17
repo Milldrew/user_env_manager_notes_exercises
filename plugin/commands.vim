@@ -21,5 +21,16 @@ command! Vimrc :e ~/.config/nvim/init.vim
 command! Ln :lua package.loaded["create-shortcuts"] = nil
 command! Lr :lua require('create-shortcuts')
 command! Todos :e ~/todos.txt
+command! Dontdo :e ~/dont-dos.txt
 command! ABtasks :e ~/ABtasks.txt
 command! Workout :e ~/Workout.txt
+command! MemoryPalace :e ~/MemoryPalace.txt
+" Create a command that inserts the current date and time at the cursors
+" location
+command! -nargs=0 InsertDate :call InsertDate()
+function! InsertDate()
+  let l:time = strftime("%c")
+  call append(line("."), l:time)
+endfunction
+inoremap <leader>ID <esc>:call InsertDate()<cr>
+nnoremap <leader>ID <esc>:call InsertDate()<cr>
