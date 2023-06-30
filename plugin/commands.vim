@@ -4,6 +4,7 @@ command! -nargs=1 Vimgrep :vimgrep <args> ./**
 command! D3notes :e ~/D3notes.txt
 command! ABbugs :e ~/ABbugs.txt
 command! Scratchv :e ~/scratch.vim
+command! Latest :e ~/.chat/latest-response.txt
 command! Scratch :e ~/scratch.txt
 command! Repl :e ~/repl.vim
 command! Bashrc :e ~/.local/share/nvim/site/pack/packer/start/user_env_manager_notes_exercises/bash_modules
@@ -14,6 +15,8 @@ command! Ftplugins :e ~/.local/share/nvim/site/pack/packer/start/user_env_manage
 command! Plugins :e ~/.local/share/nvim/site/pack/packer/start/user_env_manager_notes_exercises/plugin/
 command! Ftplugin :e ~/.vim/ftplugin
 command! Notes :e ~/.local/share/nvim/site/pack/packer/start/user_env_manager_notes_exercises/notes/
+command! -nargs=* Replace :!replace <args>
+command! -nargs=* Gdiff :exec':!gdiff ' . expand('%:p') . ' ' . <args>
 command! Schedule :e ~/.local/share/nvim/site/pack/packer/start/user_env_manager_notes_exercises/schedule.txt
 command! ScriptingHelp :h usr_41.txt
 command! Vimpacks :e ~/.vim/pack/
@@ -34,3 +37,15 @@ function! InsertDate()
 endfunction
 inoremap <leader>ID <esc>:call InsertDate()<cr>
 nnoremap <leader>ID <esc>:call InsertDate()<cr>
+
+command! Rerun :!rerun_playwright
+nnoremap <leader>rr <esc>:!rerun_playwright<cr>
+command! Stop :!stop_playwright 
+nnoremap <leader>sp <esc>:!stop_playwright<cr>
+command! RemoveDebuggers :!delete_debuggers<cr>
+nnoremap <leader>rd <esc>:!delete_debuggers<cr>
+
+command! CopyToRelease :exec "! /Users/andrewmiller/pgwebapp10/src/main/webapp/sh-bin/cp-changes-to-release.sh " . expand('%:p')
+"
+nnoremap <leader>CP :CopyToRelease<cr>
+
